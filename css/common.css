@@ -23,17 +23,32 @@ button {
   cursor: pointer;
 }
 
-ul.gallery {
-  padding: 20px;
-  max-height: 400px;
+.gallery {
+display: flex;
+flex-direction: row;
+list-style:none;
+}
+
+
+ul.gallery li {  
+  box-shadow: 12px 12px 10px 0px rgba(34, 60, 80, 0.568);
+  
+  border-radius: 50px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
   
 }
-ul.gallery li {
-  display: inline;
- margin: 5px;
+ 
 
-  border:currentColor;
-  
-  box-shadow: 12px 12px 10px 0px rgba(34, 60, 80, 0.2);
+img:first-child{
   border-radius: 50px;
+  height: 200px;
+  
+}
+
+img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+  
 }
